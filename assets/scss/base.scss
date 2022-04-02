@@ -201,16 +201,11 @@ section {
     line-height: 30px;
     padding: 28px 64px;
     border-radius: 6px;
+    transition: all 0.5s ease-in-out;
 }
 .logo-btn:hover {
-    background-color: $white-5;
-    text-decoration: none;
-    color: $black-3;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    padding: 28px 64px;
-    border-radius: 6px;
+    background-color: $primary-color;
+    color: $white-1;
 }
 
 

@@ -9,14 +9,15 @@
   <!-- Title -->
   <title>Bootstrap Agency</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!--All CSS-->
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/bootstrap.css">
   <link rel="stylesheet" href="./assets/css/media.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css"
-    integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 
@@ -24,7 +25,7 @@
 <body>
 
   <!-- Header Section Start -->
-  <header class="header">
+  <header class="header" id="header">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container ">
 
@@ -357,7 +358,7 @@
 
         <div class="col-lg-6">
           <!--jQuery Skill loader -->
-          
+
 
         </div>
       </div>
@@ -430,15 +431,54 @@
     <div class="container">
       <div class="blog-top">
         <div>
-          <h6 class="section-name">About Us</h6>
-          <h2 class="section-title">Professional Business Guidance Agency</h2>
+          <h6 class="section-name-1">Important Articles</h6>
+          <h2 class="section-title-1">Something Know Our <br>
+            Latest News & Blog</h2>
         </div>
-        <div><a href="#" class="my-btn">View All News</a></div>
+        <div><a href="#" class="btn-orange">View All News</a></div>
       </div>
       <div class="blog-content">
-        <div class="blog-card"></div>
-        <div class="blog-card"></div>
-        <div class="blog-card"></div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="./assets/img/blog-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="post-date"><i class="fa-solid fa-calendar-days"></i>29 Mar 2022</p>
+                <h5 class="card-title">How Performance Visiblety with GitLab CI and Hood</h5>
+                <p class="section-text card-text">Lorem Ipsum is simply dummy text
+                  of the printing and typesetting
+                  industry Ipsum has been</p>
+                <a href="#" class="">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./assets/img/blog-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="post-date"><i class="fa-solid fa-calendar-days"></i>29 Mar 2022</p>
+                <h5 class="card-title">How Performance Visiblety with GitLab CI and Hood</h5>
+                <p class="section-text card-text">Lorem Ipsum is simply dummy text
+                  of the printing and typesetting
+                  industry Ipsum has been</p>
+                <a href="#" class="">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./assets/img/blog-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="post-date"><i class="fa-solid fa-calendar-days"></i>29 Mar 2022</p>
+                <h5 class="card-title">How Performance Visiblety with GitLab CI and Hood</h5>
+                <p class="section-text card-text">Lorem Ipsum is simply dummy text
+                  of the printing and typesetting
+                  industry Ipsum has been</p>
+                <a href="#" class="">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -452,13 +492,12 @@
     <div class="container">
       <div class="subscription">
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-4">
             <div class="footer-logo">Company</div>
-            <p class="section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum has been the industry's standard dummy text ever since
-              Unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p class="section-text footer-logo-text">Lorem Ipsum is simply dummy text
+              of the printing and typesetting</p>
           </div>
-          <div class="col-lg-9">
+          <div class="col-lg-8">
             <!-- Subscription-box -->
 
           </div>
@@ -469,8 +508,8 @@
       <!-- Footer-Menu -->
       <div class="row">
         <div class="col-lg-3">
-          <h6 class="menu-title">Quick Links</h6>
           <div class="footer-menu">
+            <h6 class="menu-title">Quick Links</h6>
             <ul>
               <li>Company History</li>
               <li>Latest News & Blog</li>
@@ -481,8 +520,8 @@
           </div>
         </div>
         <div class="col-lg-3">
-          <h6 class="menu-title">Company</h6>
           <div class="footer-menu">
+            <h6 class="menu-title">Company</h6>
             <ul>
               <li>About Company</li>
               <li>Word Wide Clients</li>
@@ -493,33 +532,37 @@
           </div>
         </div>
         <div class="col-lg-3">
-          <h6 class="menu-title">Contact Us</h6>
-          <address class="footer-menu">
-            Call: +8801917 009887 <br>
-            Email: support@gmail.com <br>
-            Address: 123/A Broklyn Stree,
-            New York, USA
-          </address>
+          <div class="footer-menu">
+            <h6 class="menu-title">Contact Us</h6>
+            <address class="footer-menu">
+              Call: +8801917 009887 <br><br>
+              Email: support@gmail.com <br><br>
+              Address: 123/A Broklyn Stree,
+              New York, USA
+            </address>
+          </div>
         </div>
         <div class="col-lg-3">
-          <h6 class="menu-title">Follow Instagram</h6>
-          <div class="instagram-img">
-            <div class="row">
-              <div class="col-4"><img src="" alt=""></div>
-              <div class="col-4"><img src="" alt=""></div>
-              <div class="col-4"><img src="" alt=""></div>
-            </div>
-            <div class="row">
-              <div class="col-4"><img src="" alt=""></div>
-              <div class="col-4"><img src="" alt=""></div>
-              <div class="col-4"><img src="" alt=""></div>
+          <div class="footer-menu">
+            <h6 class="menu-title">Follow Instagram</h6>
+            <div class="instagram-img">
+              <div class="row">
+                <div class="col-4"><img src="" alt=""></div>
+                <div class="col-4"><img src="" alt=""></div>
+                <div class="col-4"><img src="" alt=""></div>
+              </div>
+              <div class="row">
+                <div class="col-4"><img src="" alt=""></div>
+                <div class="col-4"><img src="" alt=""></div>
+                <div class="col-4"><img src="" alt=""></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Back To Top  -->
-      <div class="back-to-top">back-to-top</div>
+      <div class="back-to-top"><a href="#header"><i class="fa-solid fa-angle-up"></i></a></div>
 
       <!-- Copyright -->
       <div class="copyright-content">

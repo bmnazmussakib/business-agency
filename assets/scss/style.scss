@@ -250,10 +250,10 @@
 //  Skill
 ========================*/
 
-.skill{
+.skill {
 
     .skill-content {
-        .section-title-1{
+        .section-title-1 {
             margin-bottom: 32px;
         }
 
@@ -267,21 +267,21 @@
 /*=======================
 //  Advisor
 ========================*/
-.advisor{
-    .advisor-img{
+.advisor {
+    .advisor-img {
         position: relative;
 
-        .comma-img{
+        .comma-img {
             position: relative;
         }
 
-        .advisor-img-1{
+        .advisor-img-1 {
             position: absolute;
             // top: 60%;
             // left: 34%;
         }
 
-        .advisor-img-2{
+        .advisor-img-2 {
             position: absolute;
             // left: 15%;
             // top: 80%;
@@ -289,6 +289,179 @@
             img {
                 border: 14px solid white;
                 border-radius: 50%;
+            }
+        }
+    }
+}
+
+
+/*=======================
+//  Logo Button
+========================*/
+
+
+
+
+
+/*=======================
+//  Blog
+========================*/
+.blog {
+
+    .blog-top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+        align-items: center;
+    }
+
+    .blog-content {
+        .card {
+
+            &:hover a {
+                color: $primary-color;
+            }
+
+            &::after {
+                display: none;
+                position: absolute;
+                width: 100%;
+                height: 4px;
+                content: "";
+                background-color: $primary-color;
+                top: 100%;
+                right: 0;
+                transition: all 0.5s ease-in-out;
+            }
+
+            &:hover::after {
+                display: block;
+
+            }
+
+            .card-body {
+                padding: 40px;
+            }
+
+            .post-date {
+                color: $primary-color;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 29px;
+
+                i {
+                    margin-right: 12px;
+                }
+
+            }
+
+            .card-title {
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 33px;
+            }
+
+            a {
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 26px;
+                color: $black-1;
+                transition: all 0.3s ease-in-out;
+
+                i {
+                    margin-left: 8px;
+                }
+
+
+            }
+        }
+    }
+}
+
+
+
+/*=======================
+//  Footer
+========================*/
+
+.footer {
+    background-color: $black-1;
+    padding-top: 80px;
+    color: #788B9A;
+
+    .subscription {
+        .footer-logo {
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 59px;
+            color: $white-1;
+            margin-bottom: 10px;
+        }
+
+        .footer-logo-text {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 32px;
+            color: #788B9A;
+        }
+    }
+
+    .footer-menu {
+        .menu-title {
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 33px;
+            color: $white-1;
+            margin-bottom: 23px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                margin-bottom: 28px;
+            }
+        }
+    }
+
+    .back-to-top {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+
+        &::after {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            content: "";
+            background-color: #788B9A;
+            transition: all 0.5s ease-in-out;
+            top: 50%;
+        
+        }
+
+        a{
+            z-index: 1;
+            text-decoration: none;
+
+            i {
+                border: 2px solid #788B9A;
+                border-radius: 100px;
+                height: 74px;
+                width: 74px;
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $primary-color;
+                background-color: $black-1;
+    
+                
+               
             }
         }
     }

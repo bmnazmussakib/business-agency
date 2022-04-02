@@ -183,17 +183,13 @@ section {
   line-height: 30px;
   padding: 28px 64px;
   border-radius: 6px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .logo-btn:hover {
-  background-color: #E8E8E8;
-  text-decoration: none;
-  color: #000000;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  padding: 28px 64px;
-  border-radius: 6px;
+  background-color: #FF4917;
+  color: #FFFFFF;
 }
 
 /*=======================
@@ -385,4 +381,148 @@ section {
 .advisor .advisor-img .advisor-img-2 img {
   border: 14px solid white;
   border-radius: 50%;
+}
+
+/*=======================
+//  Logo Button
+========================*/
+/*=======================
+//  Blog
+========================*/
+.blog .blog-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blog .blog-content .card:hover a {
+  color: #FF4917;
+}
+.blog .blog-content .card::after {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  content: "";
+  background-color: #FF4917;
+  top: 100%;
+  right: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.blog .blog-content .card:hover::after {
+  display: block;
+}
+.blog .blog-content .card .card-body {
+  padding: 40px;
+}
+.blog .blog-content .card .post-date {
+  color: #FF4917;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+}
+.blog .blog-content .card .post-date i {
+  margin-right: 12px;
+}
+.blog .blog-content .card .card-title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 33px;
+}
+.blog .blog-content .card a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  color: #14212A;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.blog .blog-content .card a i {
+  margin-left: 8px;
+}
+
+/*=======================
+//  Footer
+========================*/
+.footer {
+  background-color: #14212A;
+  padding-top: 80px;
+  color: #788B9A;
+}
+.footer .subscription .footer-logo {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 59px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.footer .subscription .footer-logo-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #788B9A;
+}
+.footer .footer-menu .menu-title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 33px;
+  color: #FFFFFF;
+  margin-bottom: 23px;
+}
+.footer .footer-menu ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer .footer-menu ul li {
+  margin-bottom: 28px;
+}
+.footer .back-to-top {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.footer .back-to-top::after {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background-color: #788B9A;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  top: 50%;
+}
+.footer .back-to-top a {
+  z-index: 1;
+  text-decoration: none;
+}
+.footer .back-to-top a i {
+  border: 2px solid #788B9A;
+  border-radius: 100px;
+  height: 74px;
+  width: 74px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FF4917;
+  background-color: #14212A;
 }
