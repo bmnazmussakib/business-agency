@@ -187,7 +187,7 @@ section {
 
 .btn-white {
     @extend .my-btn;
-    background: $black-2;
+    background: $white-1;
     color: $black-2;
 
 }
@@ -229,6 +229,15 @@ ul {
     width: 0;
     height: 0;
     border-top: 435px solid $primary-color;
+    border-right: 423px solid transparent;
+    position: absolute;
+    top: 0;
+}
+
+.top-medium-corner {
+    width: 0;
+    height: 0;
+    border-top: 435px solid rgba(255, 73, 23, .5);
     border-right: 423px solid transparent;
     position: absolute;
     top: 0;

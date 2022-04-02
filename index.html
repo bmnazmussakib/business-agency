@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="./assets/css/bootstrap.css">
   <link rel="stylesheet" href="./assets/css/media.css">
   <link rel="stylesheet" href="./assets/css/owl.carousel.css">
-  <link rel="stylesheet" href="./assets/css/jquery.DonutWidget.css">
+  <link rel="stylesheet" href="./assets/css/jQuery-plugin-progressbar.css">
 
 
 </head>
@@ -32,7 +32,9 @@
       <div class="container ">
 
         <!-- Logo -->
-        <a class="navbar-brand me-auto" href="#">Navbar</a>
+        <a class="navbar-brand me-auto" href="#">
+          <img src="./assets/img/Company.svg" alt="" class="img-fluid">
+        </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,7 +81,7 @@
               <a class="nav-link" href="#">Contacts</a>
             </li>
             <li class="nav-item">
-              <a class="my-btn" type="submit">Consulting Now</a>
+              <a class="btn-orange" type="submit">Consulting Now</a>
             </li>
           </ul>
         </div>
@@ -88,9 +90,57 @@
   </header>
   <!-- Header Section End -->
 
+  <div class="top-deep-corner" style="z-index: 110;"></div>
 
   <!-- Banner Section Start -->
   <section class="banner">
+
+    <div class="owl-carousel owl-theme">
+
+      <div class="carousel-item active">
+        <img src="./assets/img/banner.jpg" class="img-fluid" alt="...">
+        <div class="overlay"></div>
+        <div class="carousel-caption d-none d-md-block">
+          <p>Business & Consulting</p>
+          <h1>Making Difference
+            Growth Your Business
+            With Modern Ideas</h1>
+        </div>
+      </div>
+
+      <div class="carousel-item active">
+        <img src="./assets/img/banner.jpg" class="img-fluid" alt="...">
+        <div class="overlay"></div>
+        <div class="carousel-caption d-none d-md-block">
+          <p>Business & Consulting</p>
+          <h1>Making Difference
+            Growth Your Business
+            With Modern Ideas</h1>
+        </div>
+      </div>
+
+      <div class="carousel-item active">
+        <img src="./assets/img/banner.jpg" class="img-fluid" alt="...">
+        <div class="overlay"></div>
+        <div class="carousel-caption d-none d-md-block">
+          <p>Business & Consulting</p>
+          <h1>Making Difference
+            Growth Your Business
+            With Modern Ideas</h1>
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    <div class="banner-button">
+      <a href="#" class="btn-orange">Get Started Now</a>
+      <a href="#" class="btn-white">Other Services</a>
+    </div>
+
+    <div class="top-deep-corner" style="z-index: 1;"></div>
+    <div class="top-light-corner" style="z-index: 1;"></div>
 
   </section>
   <!-- Banner Section End -->
@@ -176,15 +226,20 @@
 
   <!-- Video Section Start -->
   <section class="video">
-    <div class="container">
-      <div class="video-content">
-        <h6 class="section-name-1">About Us</h6>
-        <h2 class="section-title">Professional Business Guidance Agency</h2>
-        <p class="section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-          Ipsum has been the industry's standard dummy text ever since
-          Unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <a href="#" class="btn-orange">Need Any Project</a>
+    <div class="video-container" data-vide-bg="./assets/video/1.mp4">
+      <div class="container">
+        <div class="video-content">
+          <h6 class="section-name-1">About Us</h6>
+          <h2 class="section-title">Professional Business Guidance Agency</h2>
+          <p class="section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since
+            Unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <a href="#" class="btn-orange">Need Any Project</a>
+        </div>
       </div>
+    </div>
+    <div class="overlay">
+      <div class="text">Hello World</div>
     </div>
   </section>
   <!-- Video Section End -->
@@ -505,7 +560,8 @@
 
         <div class="col-lg-6">
           <!--jQuery Skill loader -->
-          <div class="example"></div>
+         
+
 
 
         </div>
@@ -812,8 +868,9 @@
   <!-- JS Links -->
 
   <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/jquery.vide.js"></script>
   <script src="./assets/js/owl.carousel.js"></script>
-  <script src="./assets/js/jquery.DonutWidget.js"></script>
+  <script src="./assets/js/jQuery-plugin-progressbar.js"></script>
   <script src="./assets/js/vanilla.js"></script>
   <script src="./assets/js/waypoints.min.js"></script>
   <script src="./assets/js/jquery.counterup.js"></script>
