@@ -441,7 +441,9 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card">
-              <img src="./assets/img/blog-1.jpg" class="card-img-top" alt="...">
+              <div class="blog-img">
+                <img src="./assets/img/blog-1.jpg" class="card-img-top" alt="...">
+              </div>
               <div class="card-body">
                 <p class="post-date"><i class="fa-solid fa-calendar-days"></i>29 Mar 2022</p>
                 <h5 class="card-title">How Performance Visiblety with GitLab CI and Hood</h5>
@@ -454,7 +456,9 @@
           </div>
           <div class="col">
             <div class="card">
-              <img src="./assets/img/blog-1.jpg" class="card-img-top" alt="...">
+              <div class="blog-img">
+                <img src="./assets/img/blog-1.jpg" class="card-img-top" alt="...">
+              </div>
               <div class="card-body">
                 <p class="post-date"><i class="fa-solid fa-calendar-days"></i>29 Mar 2022</p>
                 <h5 class="card-title">How Performance Visiblety with GitLab CI and Hood</h5>
@@ -467,7 +471,9 @@
           </div>
           <div class="col">
             <div class="card">
-              <img src="./assets/img/blog-1.jpg" class="card-img-top" alt="...">
+              <div class="blog-img">
+                <img src="./assets/img/blog-1.jpg" class="card-img-top" alt="...">
+              </div>
               <div class="card-body">
                 <p class="post-date"><i class="fa-solid fa-calendar-days"></i>29 Mar 2022</p>
                 <h5 class="card-title">How Performance Visiblety with GitLab CI and Hood</h5>
@@ -493,12 +499,27 @@
       <div class="subscription">
         <div class="row">
           <div class="col-lg-4">
-            <div class="footer-logo">Company</div>
-            <p class="section-text footer-logo-text">Lorem Ipsum is simply dummy text
-              of the printing and typesetting</p>
+            <div class="footer-brand">
+              <div class="footer-logo">Company</div>
+              <p class="section-text footer-logo-text">Lorem Ipsum is simply dummy text
+                of the printing and typesetting</p>
+            </div>
           </div>
+
+
           <div class="col-lg-8">
             <!-- Subscription-box -->
+            <div class="subscription-box">
+              <h5 class="subscription-box-title">Subscribe Our Newsletters</h5>
+              <form class="row">
+                <div class="col-auto">
+                  <input type="email" class="form-control" id="inputPassword2" placeholder="Enter Your Email">
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn-orange">Confirm identity</button>
+                </div>
+              </form>
+            </div>
 
           </div>
         </div>
@@ -511,11 +532,11 @@
           <div class="footer-menu">
             <h6 class="menu-title">Quick Links</h6>
             <ul>
-              <li>Company History</li>
-              <li>Latest News & Blog</li>
-              <li>Popular Services</li>
-              <li>Business & Consulting</li>
-              <li>Financial Planning</li>
+              <li class="section-text">Company History</li>
+              <li class="section-text">Latest News & Blog</li>
+              <li class="section-text">Popular Services</li>
+              <li class="section-text">Business & Consulting</li>
+              <li class="section-text">Financial Planning</li>
             </ul>
           </div>
         </div>
@@ -523,18 +544,18 @@
           <div class="footer-menu">
             <h6 class="menu-title">Company</h6>
             <ul>
-              <li>About Company</li>
-              <li>Word Wide Clients</li>
-              <li>Happy People’s</li>
-              <li>Winning Awards</li>
-              <li>Company Statics</li>
+              <li class="section-text">About Company</li>
+              <li class="section-text">Word Wide Clients</li>
+              <li class="section-text">Happy People’s</li>
+              <li class="section-text">Winning Awards</li>
+              <li class="section-text">Company Statics</li>
             </ul>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="footer-menu">
             <h6 class="menu-title">Contact Us</h6>
-            <address class="footer-menu">
+            <address class="section-text">
               Call: +8801917 009887 <br><br>
               Email: support@gmail.com <br><br>
               Address: 123/A Broklyn Stree,
@@ -546,15 +567,43 @@
           <div class="footer-menu">
             <h6 class="menu-title">Follow Instagram</h6>
             <div class="instagram-img">
-              <div class="row">
-                <div class="col-4"><img src="" alt=""></div>
-                <div class="col-4"><img src="" alt=""></div>
-                <div class="col-4"><img src="" alt=""></div>
-              </div>
-              <div class="row">
-                <div class="col-4"><img src="" alt=""></div>
-                <div class="col-4"><img src="" alt=""></div>
-                <div class="col-4"><img src="" alt=""></div>
+              <div class="row row-cols-3 g-2">
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/img/instagram-img (1).jpg" class="img-fluid" alt="...">
+                    <div class="overlay"></div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/img/instagram-img (2).jpg" class="img-fluid" alt="...">
+                    <div class="overlay"></div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/img/instagram-img (3).jpg" class="img-fluid" alt="...">
+                    <div class="overlay"></div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/img/instagram-img (4).jpg" class="img-fluid" alt="...">
+                    <div class="overlay"></div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/img/instagram-img (5).jpg" class="img-fluid" alt="...">
+                    <div class="overlay"></div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/img/instagram-img (6).jpg" class="img-fluid" alt="...">
+                    <div class="overlay"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -566,8 +615,8 @@
 
       <!-- Copyright -->
       <div class="copyright-content">
-        <div class="copyright">© 2012-2022 Company</div>
-        <div class="privacy">Terms · Privacy · Program Policies</div>
+        <div class="copyright">© 2012-2022 <a href="./">Company</a></div>
+        <div class="privacy"><a href="#">Terms</a> · <a href="#">Privacy</a> · <a href="#">Program Policies</a></div>
       </div>
     </div>
   </footer>

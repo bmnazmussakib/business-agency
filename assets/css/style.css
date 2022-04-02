@@ -6,16 +6,18 @@
 1.    Import files
 2.    Header
 3.    Banner
-4.    About Intro
-5     CTA
-6.    Course
-7.    Registration
-8.    Team
-9.    Event
-10.   Testimonial 
-11.   Blog 
-12.   Client 
-13.   Footer 
+4.    About Us
+5     Service
+6.    Video 
+7.    Feature
+8.    What we do
+9.    Counter
+10.   Team 
+11.   Skill 
+12.   Advisor 
+13.   Logo Button 
+14.   Blog 
+15.   Footer 
 
 ******************************/
 /* Table of Content
@@ -215,6 +217,9 @@ section {
 }
 
 /*=======================
+//  Header
+========================*/
+/*=======================
 //  About Us
 ========================*/
 .about-content h2 {
@@ -401,8 +406,21 @@ section {
       -ms-flex-align: center;
           align-items: center;
 }
-.blog .blog-content .card:hover a {
+.blog .blog-content .card {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.blog .blog-content .card .blog-img {
+  overflow: hidden;
+}
+.blog .blog-content .card:hover {
   color: #FF4917;
+}
+.blog .blog-content .card:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .blog .blog-content .card::after {
   display: none;
@@ -413,8 +431,8 @@ section {
   background-color: #FF4917;
   top: 100%;
   right: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 .blog .blog-content .card:hover::after {
   display: block;
@@ -442,8 +460,11 @@ section {
   font-size: 20px;
   line-height: 26px;
   color: #14212A;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.blog .blog-content .card a:hover {
+  color: #FF4917;
 }
 .blog .blog-content .card a i {
   margin-left: 8px;
@@ -457,18 +478,61 @@ section {
   padding-top: 80px;
   color: #788B9A;
 }
-.footer .subscription .footer-logo {
+.footer .subscription {
+  margin-bottom: 72px;
+}
+.footer .subscription .footer-brand {
+  padding-right: 80gripx;
+}
+.footer .subscription .footer-brand .footer-logo {
   font-weight: 700;
   font-size: 45px;
   line-height: 59px;
   color: #FFFFFF;
   margin-bottom: 10px;
 }
-.footer .subscription .footer-logo-text {
+.footer .subscription .footer-brand .footer-logo-text {
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
   color: #788B9A;
+}
+.footer .subscription .subscription-box {
+  border: 2px solid;
+  padding: 50px;
+}
+.footer .subscription .subscription-box .subscription-box-title {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 33px;
+  margin-bottom: 28px;
+}
+.footer .subscription .subscription-box form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .subscription .subscription-box form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #788B9A;
+  color: #788B9A;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  width: 130%;
+  padding: 16px 0;
+}
+.footer .subscription .subscription-box form input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.footer .subscription .subscription-box form button {
+  border: none;
 }
 .footer .footer-menu .menu-title {
   font-weight: 700;
@@ -483,6 +547,32 @@ section {
 }
 .footer .footer-menu ul li {
   margin-bottom: 28px;
+}
+.footer .footer-menu .section-text {
+  color: #788B9A;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+.footer .footer-menu .instagram-img .card {
+  border: none;
+  position: relative;
+}
+.footer .footer-menu .instagram-img .card .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background-color: #FF4917;
+}
+.footer .footer-menu .instagram-img .card .overlay:hover {
+  opacity: 0.75;
 }
 .footer .back-to-top {
   text-align: center;
@@ -525,4 +615,21 @@ section {
           align-items: center;
   color: #FF4917;
   background-color: #14212A;
+}
+.footer .copyright-content {
+  padding-bottom: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .copyright-content .copyright a {
+  color: #FF4917;
+  text-decoration: none;
+}
+.footer .copyright-content .privacy a {
+  color: #788B9A;
+  text-decoration: none;
 }

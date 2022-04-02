@@ -6,16 +6,18 @@
 1.    Import files
 2.    Header
 3.    Banner
-4.    About Intro
-5     CTA
-6.    Course
-7.    Registration
-8.    Team
-9.    Event
-10.   Testimonial 
-11.   Blog 
-12.   Client 
-13.   Footer 
+4.    About Us
+5     Service
+6.    Video 
+7.    Feature
+8.    What we do
+9.    Counter
+10.   Team 
+11.   Skill 
+12.   Advisor 
+13.   Logo Button 
+14.   Blog 
+15.   Footer 
 
 ******************************/
 
@@ -51,6 +53,12 @@
 
 
 }
+
+
+
+/*=======================
+//  Header
+========================*/
 
 
 
@@ -318,8 +326,21 @@
     .blog-content {
         .card {
 
-            &:hover a {
+            transition: 0.5s ease;
+
+            .blog-img {
+                overflow: hidden;
+            }
+
+            &:hover {
                 color: $primary-color;
+            }
+
+            &:hover img {
+                transform: scale(1.1);
+                transition: all 0.5s ease-in-out;
+
+
             }
 
             &::after {
@@ -331,7 +352,7 @@
                 background-color: $primary-color;
                 top: 100%;
                 right: 0;
-                transition: all 0.5s ease-in-out;
+                transition: 0.5s ease;
             }
 
             &:hover::after {
@@ -367,7 +388,12 @@
                 font-size: 20px;
                 line-height: 26px;
                 color: $black-1;
-                transition: all 0.3s ease-in-out;
+                transition: .5s ease;
+
+                &:hover{
+                    color: $primary-color;
+                }
+
 
                 i {
                     margin-left: 8px;
@@ -391,19 +417,64 @@
     color: #788B9A;
 
     .subscription {
-        .footer-logo {
-            font-weight: 700;
-            font-size: 45px;
-            line-height: 59px;
-            color: $white-1;
-            margin-bottom: 10px;
+        margin-bottom: 72px;
+
+        .footer-brand {
+            padding-right: 80gripx;
+
+            .footer-logo {
+                font-weight: 700;
+                font-size: 45px;
+                line-height: 59px;
+                color: $white-1;
+                margin-bottom: 10px;
+            }
+
+            .footer-logo-text {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 32px;
+                color: #788B9A;
+            }
         }
 
-        .footer-logo-text {
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 32px;
-            color: #788B9A;
+        .subscription-box {
+            border: 2px solid;
+            padding: 50px;
+
+            .subscription-box-title {
+                color: $white-1;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 33px;
+                margin-bottom: 28px;
+            }
+
+            form {
+                display: flex;
+                justify-content: space-between;
+
+                input {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 2px solid #788B9A;
+                    color: #788B9A;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 32px;
+                    width: 130%;
+                    padding: 16px 0;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+
+                button {
+                    border: none;
+                }
+
+            }
         }
     }
 
@@ -422,7 +493,44 @@
 
             li {
                 margin-bottom: 28px;
+
             }
+        }
+
+        .section-text {
+            color: #788B9A;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 32px;
+        }
+
+        .instagram-img{
+            .card {
+                border: none;
+                position: relative;
+
+
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    transition: .5s ease;
+                    background-color: $primary-color;
+
+                    &:hover{
+                        opacity: 0.75;
+                    }
+                  }
+                  
+                  
+            }
+
+            
         }
     }
 
@@ -441,10 +549,10 @@
             background-color: #788B9A;
             transition: all 0.5s ease-in-out;
             top: 50%;
-        
+
         }
 
-        a{
+        a {
             z-index: 1;
             text-decoration: none;
 
@@ -459,10 +567,34 @@
                 align-items: center;
                 color: $primary-color;
                 background-color: $black-1;
-    
-                
-               
+
+
+
             }
         }
     }
+
+
+    .copyright-content {
+        padding-bottom: 26px;
+
+        display: flex;
+        justify-content: space-between;
+
+        .copyright {
+            a {
+                color: $primary-color;
+                text-decoration: none;
+            }
+        }
+
+        .privacy {
+            a {
+                color: #788B9A;
+                text-decoration: none;
+            }
+        }
+    }
+
+
 }
