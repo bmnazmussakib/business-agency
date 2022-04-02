@@ -98,6 +98,10 @@
     background-repeat: no-repeat;
     position: relative;
 
+
+
+    .light {}
+
     .section-title-2 {
         margin-bottom: 69px;
     }
@@ -160,9 +164,54 @@
 //  Feature 
 ========================*/
 .feature {
-    h2 {
-        text-align: center;
+    .feature-content {
+        .section-title-2 {
+            text-align: center;
+            margin-bottom: 67px;
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            transition: 0.5s ease;
+
+            &:hover img {
+                transform: scale(1.1);
+                transition: all 0.5s ease;
+            }
+
+            .free-consulting {
+                position: absolute;
+                bottom: 0;
+                padding-left: 25px;
+                padding-bottom: 15px;
+
+                a {
+                    text-decoration: none;
+                    color: $white-1;
+
+                    i {
+                        font-size: 35px;
+                    }
+
+                    h6 {
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 31px;
+                    }
+
+                    p {
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+
+
     }
+
 }
 
 
@@ -181,7 +230,7 @@
 
     .what-we-content {
 
-        .section-title-2 {
+        .section-title-1 {
             color: $white-1;
             margin-bottom: 32px;
         }
@@ -237,20 +286,73 @@
         margin-bottom: 67px;
     }
 
-    .card {
-        border: none;
-        text-align: center;
+    .card-holder {
 
-        img {
-            margin-bottom: 17px;
+        .card {
+            border: none;
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+
+
+            .card-img {
+                position: relative;
+
+                a {
+                    position: absolute;
+                    left: 0;
+                    color: $white-1;
+                    font-size: 1.3rem;
+                    padding: 0.8rem;
+                }
+
+                .top-deep-corner {
+                    border-top: 92px solid $primary-color;
+                    border-right: 80px solid transparent;
+                    top: 0;
+                }
+
+                .top-light-corner {
+                    border-top: 107px solid rgba(255, 73, 23, .5);
+                    border-right: 95px solid transparent;
+                    top: 0;
+                }
+
+
+                .bottom-right-corner {
+                    display: none;
+                    width: 0;
+                    height: 0;
+                    border-bottom: 130px solid $primary-color;
+                    border-left: 130px solid transparent;
+                    position: absolute;
+                    right: -5%;
+                    bottom: -4%;
+                    z-index: -1;
+                }
+
+
+            }
+
+            &:hover .bottom-right-corner {
+                display: block;
+
+            }
+
+
+
         }
 
-        .card-title {
-            font-weight: 600;
-            font-size: 26px;
-            line-height: 34px;
+        .card-body {
+            text-align: center;
+            .card-title {
+                font-weight: 600;
+                font-size: 26px;
+                line-height: 34px;
+            }
         }
     }
+
+
 }
 
 
@@ -278,25 +380,115 @@
 .advisor {
     .advisor-img {
         position: relative;
+        margin: 0 5rem 0 0;
 
         .comma-img {
-            position: relative;
+            // position: relative;
         }
 
         .advisor-img-1 {
             position: absolute;
-            // top: 60%;
-            // left: 34%;
+            top: 50%;
+            left: 45%;
         }
 
         .advisor-img-2 {
             position: absolute;
-            // left: 15%;
-            // top: 80%;
+            top: 75%;
+            left: 20%;
 
             img {
-                border: 14px solid white;
+                border: 10px solid white;
                 border-radius: 50%;
+            }
+        }
+    }
+
+    .advisor-content {
+        .section-title-1 {
+            margin-bottom: 75px;
+        }
+
+        .testimonial {
+            width: 550px;
+
+            .section-text {
+                position: relative;
+                text-indent: 40px;
+                margin-bottom: 36px;
+
+
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    // top: -7px;
+                    width: 25px;
+                    height: 25px;
+                    content: "";
+                    background: url("../img/quote\ \(1\).svg") no-repeat center center/cover;
+                }
+
+                &::after {
+                    position: absolute;
+                    // right: 0;
+                    // top: -7px;
+                    width: 25px;
+                    height: 25px;
+                    content: "";
+                    background: url("../img/quote\ \(2\).svg") no-repeat center center/cover;
+                }
+
+
+
+            }
+
+            .advisor-name {
+                display: flex;
+
+                .name-designtaion {
+                    h6 {
+                        font-weight: 600;
+                        font-size: 21px;
+                        line-height: 26px;
+                    }
+
+                    p {
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 26px;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+
+
+        .owl-carousel {
+            position: relative;
+
+            .owl-nav {
+                margin-top: 62px;
+
+                .owl-prev,
+                .owl-next {
+                    position: absolute;
+                    font-size: 2.5rem;
+                    color: #C5C6C8;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+
+                .owl-prev {
+                    // left: 2rem;
+                    bottom: -70px;
+
+                }
+
+                .owl-next {
+                    left: 2rem;
+                }
             }
         }
     }
@@ -390,7 +582,7 @@
                 color: $black-1;
                 transition: .5s ease;
 
-                &:hover{
+                &:hover {
                     color: $primary-color;
                 }
 
@@ -504,7 +696,7 @@
             line-height: 32px;
         }
 
-        .instagram-img{
+        .instagram-img {
             .card {
                 border: none;
                 position: relative;
@@ -522,15 +714,15 @@
                     transition: .5s ease;
                     background-color: $primary-color;
 
-                    &:hover{
+                    &:hover {
                         opacity: 0.75;
                     }
-                  }
-                  
-                  
+                }
+
+
             }
 
-            
+
         }
     }
 
