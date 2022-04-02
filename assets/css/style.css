@@ -1,0 +1,388 @@
+/****************************
+==============================
+   table of content 
+==============================
+
+1.    Import files
+2.    Header
+3.    Banner
+4.    About Intro
+5     CTA
+6.    Course
+7.    Registration
+8.    Team
+9.    Event
+10.   Testimonial 
+11.   Blog 
+12.   Client 
+13.   Footer 
+
+******************************/
+/* Table of Content
+====================
+
+1. typography
+2. Global styles
+
+====================*/
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+/* ===========================
+// Typography
+==============================*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #616161;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 106px;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 57px;
+  color: #14212A;
+}
+
+/*=======================
+//  Selection
+========================*/
+::-moz-selection {
+  color: #FFFFFF;
+  background: #FF4917;
+}
+::selection {
+  color: #FFFFFF;
+  background: #FF4917;
+}
+
+/*=======================
+//  Section
+========================*/
+section {
+  padding-top: 120px;
+  padding-bottom: 130px;
+}
+
+/*=======================
+//  Text
+========================*/
+.section-name-1 {
+  color: #FF4917;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  position: relative;
+  left: 55px;
+}
+.section-name-1::before {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  content: "";
+  background-color: #FF4917;
+  left: -50px;
+  top: 15px;
+}
+
+.section-name-2 {
+  color: #FF4917;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.section-name-2::before {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  content: "";
+  background-color: #FF4917;
+  left: 425px;
+  top: 15px;
+}
+.section-name-2::after {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  content: "";
+  background-color: #FF4917;
+  right: 425px;
+  top: 15px;
+}
+
+.section-title-1, .section-title-2 {
+  color: #14212A;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 57px;
+  letter-spacing: -0.02em;
+}
+
+.section-title-2 {
+  text-align: center;
+}
+
+.section-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #616161;
+}
+
+/*=======================
+//  buttons
+========================*/
+.my-btn, .btn-white, .btn-orange, .btn-black {
+  border-radius: 34px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+.btn-black {
+  background: #162029;
+  color: #FFFFFF;
+}
+
+.btn-orange {
+  background: #FF4917;
+  color: #FFFFFF;
+}
+
+.btn-white {
+  background: #162029;
+  color: #162029;
+}
+
+.logo-btn {
+  background-color: #E8E8E8;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 28px 64px;
+  border-radius: 6px;
+}
+
+.logo-btn:hover {
+  background-color: #E8E8E8;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 28px 64px;
+  border-radius: 6px;
+}
+
+/*=======================
+//  List
+========================*/
+/*=======================
+//  Header
+========================*/
+.header {
+  background-color: #FFFFFF;
+}
+.header ul li {
+  margin-right: 40px;
+}
+.header ul li a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+.header ul li:last-child {
+  margin-right: 0px;
+}
+
+/*=======================
+//  About Us
+========================*/
+.about-content h2 {
+  margin-bottom: 32px;
+}
+.about-content ul {
+  margin-bottom: 38px;
+}
+.about-content ul li {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 40px;
+  color: #14212A;
+}
+
+/*=======================
+//  Service 
+========================*/
+.service {
+  background-color: #E5E5E5;
+  background-image: url("../img/service-bg.svg");
+  background-position: right bottom;
+  background-size: 20rem;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.service .section-title-2 {
+  margin-bottom: 69px;
+}
+.service .service-card {
+  text-align: center;
+  background: #FFFFFF;
+  max-width: 370px;
+  min-height: 366px;
+  padding: 60px 50px 50px 50px;
+}
+.service .service-card img {
+  margin-bottom: 33px;
+}
+.service .service-card .card-title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 33px;
+  color: #14212A;
+  margin-bottom: 8px;
+}
+.service .service-card::after {
+  position: absolute;
+  width: 96%;
+  height: 2%;
+  content: "";
+  background-color: #ECEEED;
+  top: 100%;
+  left: 2%;
+  right: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.service .service-card:hover {
+  cursor: pointer;
+}
+.service .service-card:hover::after {
+  background-color: #FF4917;
+}
+
+/*=======================
+//  Video 
+========================*/
+/*=======================
+//  Feature 
+========================*/
+.feature h2 {
+  text-align: center;
+}
+
+/*=======================
+//  What we do 
+========================*/
+.what-we .row {
+  background-color: #14212A;
+  padding: 80px 40px;
+}
+.what-we .what-we-content .section-title-2 {
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+.what-we .what-we-content p {
+  margin-bottom: 17px;
+  color: #C2D9EB;
+}
+.what-we .what-we-content ul {
+  margin-bottom: 50px;
+  list-style-image: url(../img/list-style-type.svg);
+}
+.what-we .what-we-content ul li {
+  color: #C2D9EB;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+/*=======================
+//  Counter 
+========================*/
+.counter {
+  background-color: #F5F5F5;
+  padding: 0 50px;
+}
+.counter .counter-card {
+  text-align: center;
+}
+.counter .counter-card img {
+  margin-bottom: 18px;
+}
+.counter .counter-card h4 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 57px;
+}
+
+/*=======================
+//  Team 
+========================*/
+.team .section-title-2 {
+  margin-bottom: 67px;
+}
+.team .card {
+  border: none;
+  text-align: center;
+}
+.team .card img {
+  margin-bottom: 17px;
+}
+.team .card .card-title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 34px;
+}
+
+/*=======================
+//  Skill
+========================*/
+.skill .skill-content .section-title-1, .skill .skill-content .section-title-2 {
+  margin-bottom: 32px;
+}
+.skill .skill-content p {
+  margin-bottom: 50px;
+}
+
+/*=======================
+//  Advisor
+========================*/
+.advisor .advisor-img {
+  position: relative;
+}
+.advisor .advisor-img .comma-img {
+  position: relative;
+}
+.advisor .advisor-img .advisor-img-1 {
+  position: absolute;
+}
+.advisor .advisor-img .advisor-img-2 {
+  position: absolute;
+}
+.advisor .advisor-img .advisor-img-2 img {
+  border: 14px solid white;
+  border-radius: 50%;
+}

@@ -1,0 +1,295 @@
+/****************************
+==============================
+   table of content 
+==============================
+
+1.    Import files
+2.    Header
+3.    Banner
+4.    About Intro
+5     CTA
+6.    Course
+7.    Registration
+8.    Team
+9.    Event
+10.   Testimonial 
+11.   Blog 
+12.   Client 
+13.   Footer 
+
+******************************/
+
+
+//Import files
+@import "variables";
+@import 'base';
+
+
+/*=======================
+//  Header
+========================*/
+.header {
+    background-color: $bg-1;
+
+    ul {
+        li {
+            margin-right: 40px;
+
+            a {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 24px;
+                text-align: center;
+            }
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+
+    }
+
+
+}
+
+
+
+/*=======================
+//  About Us
+========================*/
+.about-content {
+    // width: 95%;
+
+    h2 {
+        margin-bottom: 32px;
+    }
+
+    ul {
+        margin-bottom: 38px;
+
+        li {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 40px;
+            color: $text-color-3;
+        }
+
+    }
+}
+
+
+
+/*=======================
+//  Service 
+========================*/
+.service {
+    background-color: $bg-2;
+    background-image: url('../img/service-bg.svg');
+    background-position: right bottom;
+    background-size: 20rem;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .section-title-2 {
+        margin-bottom: 69px;
+    }
+
+    .service-card {
+        text-align: center;
+        background: $white-1;
+        // align-items: center;
+        max-width: 370px;
+        min-height: 366px;
+        padding: 60px 50px 50px 50px;
+
+
+
+        img {
+            margin-bottom: 33px;
+        }
+
+        .card-title {
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 33px;
+            color: $black-1;
+            margin-bottom: 8px;
+
+        }
+
+        &::after {
+            position: absolute;
+            width: 96%;
+            height: 2%;
+            content: "";
+            background-color: #ECEEED;
+            top: 100%;
+            left: 2%;
+            right: 0;
+            transition: all 0.5s ease-in-out;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:hover::after {
+            background-color: $primary-color;
+        }
+    }
+
+}
+
+
+/*=======================
+//  Video 
+========================*/
+
+
+
+
+/*=======================
+//  Feature 
+========================*/
+.feature {
+    h2 {
+        text-align: center;
+    }
+}
+
+
+/*=======================
+//  What we do 
+========================*/
+.what-we {
+    .container {
+        // padding: 0 50px;
+    }
+
+    .row {
+        background-color: $black-1;
+        padding: 80px 40px;
+    }
+
+    .what-we-content {
+
+        .section-title-2 {
+            color: $white-1;
+            margin-bottom: 32px;
+        }
+
+        p {
+            margin-bottom: 17px;
+            color: $grey-4;
+        }
+
+        ul {
+            margin-bottom: 50px;
+            list-style-image: url(../img/list-style-type.svg);
+
+            li {
+                color: $grey-4;
+                font-size: 20px;
+                padding-left: 20px;
+            }
+        }
+
+    }
+}
+
+
+/*=======================
+//  Counter 
+========================*/
+.counter {
+    background-color: $bg-3;
+    padding: 0 50px;
+
+    .counter-card {
+        text-align: center;
+
+        img {
+            margin-bottom: 18px;
+        }
+
+        h4 {
+            font-weight: 700;
+            font-size: 54px;
+            line-height: 57px;
+        }
+    }
+}
+
+
+/*=======================
+//  Team 
+========================*/
+.team {
+    .section-title-2 {
+        margin-bottom: 67px;
+    }
+
+    .card {
+        border: none;
+        text-align: center;
+
+        img {
+            margin-bottom: 17px;
+        }
+
+        .card-title {
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 34px;
+        }
+    }
+}
+
+
+/*=======================
+//  Skill
+========================*/
+
+.skill{
+
+    .skill-content {
+        .section-title-1{
+            margin-bottom: 32px;
+        }
+
+        p {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+
+/*=======================
+//  Advisor
+========================*/
+.advisor{
+    .advisor-img{
+        position: relative;
+
+        .comma-img{
+            position: relative;
+        }
+
+        .advisor-img-1{
+            position: absolute;
+            // top: 60%;
+            // left: 34%;
+        }
+
+        .advisor-img-2{
+            position: absolute;
+            // left: 15%;
+            // top: 80%;
+
+            img {
+                border: 14px solid white;
+                border-radius: 50%;
+            }
+        }
+    }
+}

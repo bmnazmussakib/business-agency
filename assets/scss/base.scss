@@ -1,0 +1,222 @@
+/* Table of Content
+====================
+
+1. typography
+2. Global styles
+
+====================*/
+
+// import files
+@import "variables";
+
+
+// Import Fonts
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+/* ===========================
+// Typography
+==============================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Assistant', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: $text-color-1;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 106px;
+    color: $white-1;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 57px;
+    color: $title-color-2;
+}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+
+
+
+
+
+
+/*=======================
+//  Selection
+========================*/
+::selection {
+    color: $white-1;
+    background: $primary-color;
+}
+
+
+
+/*=======================
+//  Section
+========================*/
+section {
+    padding-top: 120px;
+    padding-bottom: 130px;
+}
+
+
+
+
+
+
+/*=======================
+//  Text
+========================*/
+.section-name-1 {
+    color: $primary-color;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    position: relative;
+    left: 55px;
+
+    &::before {
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        content: "";
+        background-color: $primary-color;
+        left: -50px;
+        top: 15px;
+    }
+}
+
+.section-name-2 {
+    color: $primary-color;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 15px;
+
+    &::before {
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        content: "";
+        background-color: $primary-color;
+        left: 425px;
+        top: 15px;
+    }
+
+    &::after {
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        content: "";
+        background-color: $primary-color;
+        right: 425px;
+        top: 15px;
+    }
+}
+
+.section-title-1 {
+    color: $title-color-2;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 57px;
+    letter-spacing: -0.02em;
+}
+
+.section-title-2 {
+    @extend .section-title-1;
+    text-align: center;
+}
+
+.section-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: $text-color-1;
+}
+
+
+
+
+/*=======================
+//  buttons
+========================*/
+.my-btn {
+
+    border-radius: 34px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+
+}
+
+.btn-black {
+    @extend .my-btn;
+    background: $black-2;
+    color: $white-1;
+    ;
+}
+
+.btn-orange {
+    @extend .my-btn;
+    background: $primary-color;
+    color: $white-1;
+}
+
+.btn-white {
+    @extend .my-btn;
+    background: $black-2;
+    color: $black-2;
+
+}
+
+.logo-btn {
+    background-color: $white-5;
+    text-decoration: none;
+    color: $black-3;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 28px 64px;
+    border-radius: 6px;
+}
+.logo-btn:hover {
+    background-color: $white-5;
+    text-decoration: none;
+    color: $black-3;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 28px 64px;
+    border-radius: 6px;
+}
+
+
+/*=======================
+//  List
+========================*/
+ul {
+    li {}
+}
